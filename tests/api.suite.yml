@@ -1,0 +1,7 @@
+actor: ApiTester
+modules:
+    enabled:
+        - REST:
+            url: http://%hostname%/
+            depends: PhpBrowser
+            part: Json

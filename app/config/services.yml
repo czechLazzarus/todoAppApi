@@ -1,0 +1,16 @@
+parameters:
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    TodoBundle\:
+        resource: '../../src/TodoBundle/*'
+        exclude: '../../src/TodoBundle/{Entity,Repository,Tests}'
+
+    TodoBundle\Controller\:
+        resource: '../../src/TodoBundle/Controller'
+        public: true
+        tags: ['controller.service_arguments']
