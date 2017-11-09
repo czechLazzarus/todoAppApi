@@ -2,7 +2,7 @@ todoSymfony
 ===========
 Build
 
-Composer install
+composer install
 
 
 Creating database
